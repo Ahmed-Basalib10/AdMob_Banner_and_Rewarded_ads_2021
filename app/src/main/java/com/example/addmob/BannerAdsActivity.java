@@ -75,4 +75,13 @@ public class BannerAdsActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(adRequest == null){
+            adRequest = new AdRequest.Builder().build();
+            binding.adView.loadAd(adRequest);
+        }
+    }
 }
