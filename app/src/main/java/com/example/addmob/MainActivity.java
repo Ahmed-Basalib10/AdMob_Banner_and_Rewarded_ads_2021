@@ -31,6 +31,19 @@ public class MainActivity extends AppCompatActivity {
      * 2021
     **/
 
+    /**
+     * We need to Add the dependencies for the Mobile Ads SDK to your module's app-level
+     * Gradle file,which is usually app/build.gradle:
+     *   dependencies {
+     *     implementation 'com.google.android.gms:play-services-ads:20.3.0'
+     *   }
+     * Also Add your AdMob app ID (identified in the AdMob UI) to your app's
+     * AndroidManifest.xml file.
+     *      <meta-data
+     *                  android:name="com.google.android.gms.ads.APPLICATION_ID"
+     *                  android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"/>
+     */
+
     private RewardedAd mRewardedAd;
     private final String TAG = "MainActivity";
     private ActivityMainBinding binding;
